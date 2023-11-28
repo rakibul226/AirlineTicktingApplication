@@ -52,6 +52,18 @@
     <Compile Include="AddPassenger.Designer.cs">
       <DependentUpon>AddPassenger.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewPassenger.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddPassenger.resx">
       <DependentUpon>AddPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewPassenger.resx">
       <DependentUpon>ViewPassenger.cs</DependentUpon>

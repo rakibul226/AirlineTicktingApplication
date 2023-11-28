@@ -34,7 +34,7 @@ namespace TicktingApplication
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,6 +47,11 @@ namespace TicktingApplication
         {
             new AddPassenger().Show();
             this.Hide();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -61,7 +61,27 @@ namespace TicktingApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
+            const string adminUsername = "admin";
+            const string adminPassword = "admin";
+            string username = UserId.Text.Trim();
+            string password = UserPass.Text.Trim();
 
+            //OUser oUser = new OUser();
+          //  DataTable dt = new DataTable();
+           // dt = oUser.UserAuthentication(username, password);
+
+
+            if (username == adminUsername && password == adminPassword)
+            {
+                new AdminHome().Show();
+                this.Hide();
+            }
+
+            else
+            {
+                new UserHome().Show();
+                this.Hide();
+            };
         }
     }
 }
