@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 
 namespace TicktingApplication
@@ -93,6 +94,16 @@ namespace TicktingApplication
         {
             new Login().Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PassId.Text = "";
+            PassAd.Text = "";
+            PassName.Text = "";
+            PassportTb.Text ="";
+            PhoneTb.Text = "";
+
         }
     }
 }

@@ -33,10 +33,7 @@ namespace TicktingApplication
             UserPass.Text = "";
         }
 
-        private void label4_Click(object sender, EventArgs e)//exit button
-        {
-            Application.Exit();
-        }
+        
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -82,6 +79,11 @@ namespace TicktingApplication
                 new UserHome().Show();
                 this.Hide();
             };
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

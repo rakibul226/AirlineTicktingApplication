@@ -16,5 +16,23 @@ namespace TicktingApplication
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new ViewPassenger().Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new AllTicket().Show();
+            this.Hide();
+        }
     }
 }

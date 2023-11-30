@@ -16,5 +16,21 @@ namespace TicktingApplication
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            new AdminHome().Show();
+            this.Hide();
+        }
     }
 }
