@@ -17,10 +17,7 @@ namespace TicktingApplication
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -31,6 +28,11 @@ namespace TicktingApplication
         {
             new AdminHome().Show();
             this.Hide();
+        }
+
+        private void AllTicket_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

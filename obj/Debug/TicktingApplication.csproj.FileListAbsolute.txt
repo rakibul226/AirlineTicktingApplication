@@ -14,3 +14,4 @@ C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AdminHome.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UserHome.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AllTicket.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AddNewTicket.resources
