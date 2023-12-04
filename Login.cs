@@ -64,8 +64,8 @@ namespace TicktingApplication
             string password = UserPass.Text.Trim();
 
             //OUser oUser = new OUser();
-          //  DataTable dt = new DataTable();
-           // dt = oUser.UserAuthentication(username, password);
+            //  DataTable dt = new DataTable();
+            // dt = oUser.UserAuthentication(username, password);
 
 
             if (username == adminUsername && password == adminPassword)
@@ -73,12 +73,16 @@ namespace TicktingApplication
                 new AdminHome().Show();
                 this.Hide();
             }
-
-            else
+            
+            else if(username == "user" && password == "user")
             {
                 new UserHome().Show();
                 this.Hide();
-            };
+            }
+            else
+            {
+                MessageBox.Show("Invalid user");
+            }
         }
 
         private void label8_Click(object sender, EventArgs e)

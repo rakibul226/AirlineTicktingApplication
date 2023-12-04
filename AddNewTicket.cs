@@ -21,7 +21,7 @@ namespace TicktingApplication
         SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Fcode.Text == "" || Ffrom.Text == "" || Fto.Text == "" || FDate.Text == "" || Fseat.Text == "")
+            if (Flight.Text == "" || From.Text == "" || To.Text == "" || Date.Text == "" || Seat.Text == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -30,7 +30,7 @@ namespace TicktingApplication
                 try
                 {
                     Con.Open();
-                    string query = "insert into FlightTbl values('" + Fcode.Text + "','" + Ffrom.SelectedItem.ToString() + "','" + Fto.SelectedItem.ToString() + "','" + FDate.Value.ToString() + "','" + Fseat.Text + "')";
+                    string query = "insert into FlightTbl values('" + Flight.Text + "','" + From.SelectedItem.ToString() + "','" + To.SelectedItem.ToString() + "','" + Date.Value.ToString() + "','" + Seat.Text + "')";
 
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
@@ -43,6 +43,17 @@ namespace TicktingApplication
                 }
 
             }
+        }
+
+        private void AddNewTicket_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            new AllTicket().Show();
+            this.Hide();
         }
     }
 }

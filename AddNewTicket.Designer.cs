@@ -36,11 +36,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Fcode = new System.Windows.Forms.TextBox();
-            this.Fseat = new System.Windows.Forms.TextBox();
-            this.FDate = new System.Windows.Forms.DateTimePicker();
-            this.Ffrom = new System.Windows.Forms.ComboBox();
-            this.Fto = new System.Windows.Forms.ComboBox();
+            this.Flight = new System.Windows.Forms.TextBox();
+            this.Seat = new System.Windows.Forms.TextBox();
+            this.Date = new System.Windows.Forms.DateTimePicker();
+            this.From = new System.Windows.Forms.ComboBox();
+            this.To = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button3
@@ -142,39 +144,39 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "To:";
             // 
-            // Fcode
+            // Flight
             // 
-            this.Fcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fcode.Location = new System.Drawing.Point(247, 156);
-            this.Fcode.Name = "Fcode";
-            this.Fcode.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.Fcode.Size = new System.Drawing.Size(157, 30);
-            this.Fcode.TabIndex = 15;
-            this.Fcode.Text = " ";
+            this.Flight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Flight.Location = new System.Drawing.Point(247, 156);
+            this.Flight.Name = "Flight";
+            this.Flight.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Flight.Size = new System.Drawing.Size(157, 30);
+            this.Flight.TabIndex = 15;
+            this.Flight.Text = " ";
             // 
-            // Fseat
+            // Seat
             // 
-            this.Fseat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fseat.Location = new System.Drawing.Point(600, 259);
-            this.Fseat.Name = "Fseat";
-            this.Fseat.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.Fseat.Size = new System.Drawing.Size(157, 30);
-            this.Fseat.TabIndex = 19;
-            this.Fseat.Text = " ";
+            this.Seat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seat.Location = new System.Drawing.Point(600, 259);
+            this.Seat.Name = "Seat";
+            this.Seat.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Seat.Size = new System.Drawing.Size(157, 30);
+            this.Seat.TabIndex = 19;
+            this.Seat.Text = " ";
             // 
-            // FDate
+            // Date
             // 
-            this.FDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FDate.Location = new System.Drawing.Point(600, 208);
-            this.FDate.Name = "FDate";
-            this.FDate.Size = new System.Drawing.Size(157, 30);
-            this.FDate.TabIndex = 20;
+            this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Date.Location = new System.Drawing.Point(600, 208);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(157, 30);
+            this.Date.TabIndex = 20;
             // 
-            // Ffrom
+            // From
             // 
-            this.Ffrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ffrom.FormattingEnabled = true;
-            this.Ffrom.Items.AddRange(new object[] {
+            this.From.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.From.FormattingEnabled = true;
+            this.From.Items.AddRange(new object[] {
             "Bangladesh",
             "India",
             "China",
@@ -184,16 +186,16 @@
             "Uk",
             "Russis",
             "Canada"});
-            this.Ffrom.Location = new System.Drawing.Point(247, 211);
-            this.Ffrom.Name = "Ffrom";
-            this.Ffrom.Size = new System.Drawing.Size(157, 39);
-            this.Ffrom.TabIndex = 22;
+            this.From.Location = new System.Drawing.Point(247, 211);
+            this.From.Name = "From";
+            this.From.Size = new System.Drawing.Size(157, 39);
+            this.From.TabIndex = 22;
             // 
-            // Fto
+            // To
             // 
-            this.Fto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fto.FormattingEnabled = true;
-            this.Fto.Items.AddRange(new object[] {
+            this.To.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.To.FormattingEnabled = true;
+            this.To.Items.AddRange(new object[] {
             "Bangladesh",
             "India",
             "China",
@@ -203,10 +205,36 @@
             "Uk",
             "Russis",
             "Canada"});
-            this.Fto.Location = new System.Drawing.Point(247, 260);
-            this.Fto.Name = "Fto";
-            this.Fto.Size = new System.Drawing.Size(157, 39);
-            this.Fto.TabIndex = 23;
+            this.To.Location = new System.Drawing.Point(247, 260);
+            this.To.Name = "To";
+            this.To.Size = new System.Drawing.Size(157, 39);
+            this.To.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Red;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(752, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(36, 36);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "X";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(270, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(317, 40);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Biman Bangladesh";
             // 
             // AddNewTicket
             // 
@@ -214,11 +242,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Fto);
-            this.Controls.Add(this.Ffrom);
-            this.Controls.Add(this.FDate);
-            this.Controls.Add(this.Fseat);
-            this.Controls.Add(this.Fcode);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.To);
+            this.Controls.Add(this.From);
+            this.Controls.Add(this.Date);
+            this.Controls.Add(this.Seat);
+            this.Controls.Add(this.Flight);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -231,6 +261,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewTicket";
             this.Text = "AddNewTicket";
+            this.Load += new System.EventHandler(this.AddNewTicket_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,10 +277,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox Fcode;
-        private System.Windows.Forms.TextBox Fseat;
-        private System.Windows.Forms.DateTimePicker FDate;
-        private System.Windows.Forms.ComboBox Ffrom;
-        private System.Windows.Forms.ComboBox Fto;
+        private System.Windows.Forms.TextBox Flight;
+        private System.Windows.Forms.TextBox Seat;
+        private System.Windows.Forms.DateTimePicker Date;
+        private System.Windows.Forms.ComboBox From;
+        private System.Windows.Forms.ComboBox To;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -75,8 +75,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 38);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Booked Ticket";
+            this.button1.Text = "View Ticket";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -88,7 +89,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(216, 38);
             this.button2.TabIndex = 5;
-            this.button2.Text = "All Ticket";
+            this.button2.Text = "All Flight";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -142,13 +143,14 @@
             this.label8.Size = new System.Drawing.Size(36, 36);
             this.label8.TabIndex = 37;
             this.label8.Text = "X";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);

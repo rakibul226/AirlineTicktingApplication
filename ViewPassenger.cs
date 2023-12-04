@@ -45,5 +45,10 @@ namespace TicktingApplication
             new AdminHome().Show();
             this.Hide();
         }
+
+        private void PassengerDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

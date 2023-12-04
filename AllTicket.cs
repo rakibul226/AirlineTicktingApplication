@@ -34,5 +34,11 @@ namespace TicktingApplication
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new AddNewTicket().Show();
+            this.Hide();
+        }
     }
 }

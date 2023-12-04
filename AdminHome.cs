@@ -39,5 +39,16 @@ namespace TicktingApplication
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new ViewTicket().Show();
+            this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

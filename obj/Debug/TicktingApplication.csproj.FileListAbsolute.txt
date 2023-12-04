@@ -15,3 +15,6 @@ C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UserHome.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AllTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AddNewTicket.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.RemoveTicket.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.ViewTicket.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UserAvaliableFlight.resources
