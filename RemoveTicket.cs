@@ -48,8 +48,9 @@ namespace TicktingApplication
             From.Text = AvaibleTicketShow.SelectedRows[0].Cells[1].Value.ToString();
             To.Text = AvaibleTicketShow.SelectedRows[0].Cells[2].Value.ToString();
             Date.Text = AvaibleTicketShow.SelectedRows[0].Cells[3].Value.ToString();
-
         }
+
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -58,6 +59,7 @@ namespace TicktingApplication
             To.Text = "";
             Date.Text = "";
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string flight = Flight.Text;

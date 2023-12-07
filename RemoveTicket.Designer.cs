@@ -35,11 +35,11 @@
             this.Date = new System.Windows.Forms.TextBox();
             this.From = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,20 +126,6 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "To :";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Red;
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(752, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 36);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "X";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -190,6 +176,20 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Red;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(752, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(36, 36);
+            this.label8.TabIndex = 41;
+            this.label8.Text = "X";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // RemoveTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -227,10 +227,10 @@
         private System.Windows.Forms.TextBox Date;
         private System.Windows.Forms.TextBox From;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label8;
     }
 }

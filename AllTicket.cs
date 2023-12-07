@@ -41,5 +41,11 @@ namespace TicktingApplication
             new AddNewTicket().Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new UpdateFlight().Show();
+            this.Hide();
+        }
     }
 }

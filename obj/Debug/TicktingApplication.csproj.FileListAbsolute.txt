@@ -18,3 +18,5 @@ C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.RemoveTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.ViewTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UserAvaliableFlight.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UpdateFlight.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UpdateFlight2.resources
