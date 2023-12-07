@@ -80,7 +80,7 @@
             this.button2.BackColor = System.Drawing.Color.DarkCyan;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(380, 304);
+            this.button2.Location = new System.Drawing.Point(383, 304);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 38);
@@ -101,6 +101,7 @@
             this.label8.Size = new System.Drawing.Size(36, 36);
             this.label8.TabIndex = 36;
             this.label8.Text = "X";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // LandingPage
             // 

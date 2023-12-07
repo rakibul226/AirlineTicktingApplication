@@ -146,21 +146,21 @@
             // 
             // Flight
             // 
-            this.Flight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Flight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Flight.Location = new System.Drawing.Point(247, 156);
             this.Flight.Name = "Flight";
             this.Flight.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.Flight.Size = new System.Drawing.Size(157, 30);
+            this.Flight.Size = new System.Drawing.Size(157, 38);
             this.Flight.TabIndex = 15;
             this.Flight.Text = " ";
             // 
             // Seat
             // 
-            this.Seat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Seat.Location = new System.Drawing.Point(600, 259);
             this.Seat.Name = "Seat";
             this.Seat.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.Seat.Size = new System.Drawing.Size(157, 30);
+            this.Seat.Size = new System.Drawing.Size(157, 34);
             this.Seat.TabIndex = 19;
             this.Seat.Text = " ";
             // 

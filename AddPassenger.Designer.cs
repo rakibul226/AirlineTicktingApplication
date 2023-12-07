@@ -80,17 +80,17 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(164, 145);
+            this.label3.Location = new System.Drawing.Point(194, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 32);
+            this.label3.Size = new System.Drawing.Size(138, 32);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Passenger Id:";
+            this.label3.Text = "Password:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // PassId
             // 
             this.PassId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassId.Location = new System.Drawing.Point(374, 145);
+            this.PassId.Location = new System.Drawing.Point(374, 207);
             this.PassId.Name = "PassId";
             this.PassId.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.PassId.Size = new System.Drawing.Size(188, 38);
@@ -140,11 +140,11 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(88, 349);
+            this.label7.Location = new System.Drawing.Point(211, 345);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(251, 32);
+            this.label7.Size = new System.Drawing.Size(120, 32);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Passenger  Address:";
+            this.label7.Text = "Address:";
             // 
             // Passport
             // 
@@ -152,11 +152,11 @@
             this.Passport.BackColor = System.Drawing.Color.Transparent;
             this.Passport.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Passport.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.Passport.Location = new System.Drawing.Point(99, 280);
+            this.Passport.Location = new System.Drawing.Point(155, 280);
             this.Passport.Name = "Passport";
-            this.Passport.Size = new System.Drawing.Size(240, 32);
+            this.Passport.Size = new System.Drawing.Size(176, 32);
             this.Passport.TabIndex = 13;
-            this.Passport.Text = "Passport  Number:";
+            this.Passport.Text = "Passport  No:";
             // 
             // label9
             // 
@@ -164,11 +164,11 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label9.Location = new System.Drawing.Point(115, 215);
+            this.label9.Location = new System.Drawing.Point(233, 144);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(224, 32);
+            this.label9.Size = new System.Drawing.Size(98, 32);
             this.label9.TabIndex = 14;
-            this.label9.Text = "Passenger  Name:";
+            this.label9.Text = " Name:";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // PassportTb
@@ -194,7 +194,7 @@
             // PassName
             // 
             this.PassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassName.Location = new System.Drawing.Point(374, 211);
+            this.PassName.Location = new System.Drawing.Point(374, 144);
             this.PassName.Name = "PassName";
             this.PassName.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.PassName.Size = new System.Drawing.Size(188, 38);

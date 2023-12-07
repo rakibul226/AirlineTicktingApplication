@@ -17,8 +17,8 @@ namespace TicktingApplication
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new LandingPage());
-            //Application.Run(new RemoveTicket());
+           // Application.Run(new LandingPage());
+            Application.Run(new RemoveTicket());
 
             //Application.Run(new ViewTicket());
             //Application.Run(new AddNewTicket());

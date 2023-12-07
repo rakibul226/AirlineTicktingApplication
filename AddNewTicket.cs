@@ -13,8 +13,9 @@ namespace TicktingApplication
 {
     public partial class AddNewTicket : Form
     {
-        public AddNewTicket()
+        public AddNewTicket() 
         {
+
             InitializeComponent();
         }
 
