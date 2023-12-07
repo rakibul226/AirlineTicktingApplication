@@ -18,12 +18,12 @@ namespace TicktingApplication
             Application.SetCompatibleTextRenderingDefault(false);
 
            // Application.Run(new LandingPage());
-            Application.Run(new RemoveTicket());
+            //Application.Run(new RemoveTicket());
 
             //Application.Run(new ViewTicket());
-            //Application.Run(new AddNewTicket());
+           // Application.Run(new AddNewTicket());
 
-            //Application.Run(new AdminHome());
+            Application.Run(new AdminHome());
             
             //Application.Run(new UserAvaliableFlight());
             // Application.Run(new Login());

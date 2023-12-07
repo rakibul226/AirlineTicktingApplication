@@ -58,13 +58,14 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(317, 385);
+            this.button1.Location = new System.Drawing.Point(308, 385);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 38);
             this.button1.TabIndex = 18;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AvaibleTicketShow
             // 
@@ -181,9 +182,9 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(649, 164);
+            this.button2.Location = new System.Drawing.Point(649, 160);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 30);
+            this.button2.Size = new System.Drawing.Size(106, 34);
             this.button2.TabIndex = 45;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;

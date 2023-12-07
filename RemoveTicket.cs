@@ -58,5 +58,32 @@ namespace TicktingApplication
             To.Text = "";
             Date.Text = "";
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string flight = Flight.Text;
+
+            if (flight == "")
+            {
+                MessageBox.Show("Missing Flight information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string query = "DELETE FROM FlightTbl WHERE Flight = '" + flight + "'";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Flight Deleted Successfully");
+                    Con.Close();
+                    populate();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
     }
 }
