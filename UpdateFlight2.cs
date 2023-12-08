@@ -89,6 +89,11 @@ namespace TicktingApplication
             new AllTicket().Show();
             this.Hide();
         }
+
+        private void Seat2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

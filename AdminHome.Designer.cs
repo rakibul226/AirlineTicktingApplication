@@ -37,6 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.SUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,9 +61,9 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(319, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 23);
+            this.label2.Size = new System.Drawing.Size(134, 23);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Loged in as: Admin";
+            this.label2.Text = "Loged in as: ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
@@ -145,6 +146,18 @@
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // SUser
+            // 
+            this.SUser.AutoSize = true;
+            this.SUser.BackColor = System.Drawing.Color.Transparent;
+            this.SUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SUser.ForeColor = System.Drawing.Color.Green;
+            this.SUser.Location = new System.Drawing.Point(442, 83);
+            this.SUser.Name = "SUser";
+            this.SUser.Size = new System.Drawing.Size(46, 23);
+            this.SUser.TabIndex = 45;
+            this.SUser.Text = "****";
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -153,6 +166,7 @@
             this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SUser);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
@@ -164,6 +178,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminHome";
             this.Text = "AdminHome";
+            this.Load += new System.EventHandler(this.AdminHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -180,5 +195,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label SUser;
     }
 }

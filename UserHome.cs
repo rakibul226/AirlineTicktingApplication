@@ -19,7 +19,9 @@ namespace TicktingApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            BuyTicket newTicket = new BuyTicket();
+            newTicket.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -37,6 +39,11 @@ namespace TicktingApplication
         {
             new UserAvaliableFlight().Show();
             this.Hide();
+        }
+
+        private void UserHome_Load(object sender, EventArgs e)
+        {
+            SUser.Text =  GlobalVariablesClass.VariableOne ;
         }
     }
 }

@@ -143,6 +143,7 @@
             this.Seat2.Size = new System.Drawing.Size(106, 30);
             this.Seat2.TabIndex = 57;
             this.Seat2.Text = " ";
+            this.Seat2.TextChanged += new System.EventHandler(this.Seat2_TextChanged);
             // 
             // label5
             // 

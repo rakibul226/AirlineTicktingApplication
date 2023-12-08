@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace TicktingApplication
 {
@@ -22,7 +23,9 @@ namespace TicktingApplication
         SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Flight.Text == "" || From.Text == "" || To.Text == "" || Date.Text == "" || Seat.Text == "")
+            //if(   Flight.Text == "" || From.Text =="" || To.Text == "" || Date.Text == "" || Seat.Text == "")
+
+             if (string.IsNullOrEmpty(Flight.Text) || string.IsNullOrEmpty(From.Text) || string.IsNullOrEmpty(To.Text)|| string.IsNullOrEmpty(Date.Text) || !int.TryParse(Seat.Text, out int seatValue))
             {
                 MessageBox.Show("Missing Information");
             }

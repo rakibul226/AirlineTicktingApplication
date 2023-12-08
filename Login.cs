@@ -70,12 +70,16 @@ namespace TicktingApplication
 
             if (username == adminUsername && password == adminPassword)
             {
+                
+                GlobalVariablesClass.VariableOne = UserId.Text;
                 new AdminHome().Show();
                 this.Hide();
             }
             
             else if(username == "user" && password == "user")
             {
+               
+                GlobalVariablesClass.VariableOne = UserId.Text;
                 new UserHome().Show();
                 this.Hide();
             }
@@ -83,7 +87,12 @@ namespace TicktingApplication
             {
                 MessageBox.Show("Invalid user");
             }
+
+
         }
+
+        
+
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -93,6 +102,12 @@ namespace TicktingApplication
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+        private bool IsValidUser(string username, string password)
+        {
+            // Replace this with your actual authentication logic (e.g., database check)
+            // For simplicity, using hardcoded values here
+            return username == "demo" && password == "password";
         }
     }
 }

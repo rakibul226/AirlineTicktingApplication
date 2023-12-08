@@ -50,5 +50,10 @@ namespace TicktingApplication
         {
             Application.Exit();
         }
+
+        private void AdminHome_Load(object sender, EventArgs e)
+        {
+            SUser.Text = GlobalVariablesClass.VariableOne;
+        }
     }
 }
