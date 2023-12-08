@@ -46,5 +46,12 @@ namespace TicktingApplication
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SoldTicket viewTicket = new SoldTicket();
+            viewTicket.Show();
+            this.Hide();
+        }
     }
 }

@@ -61,20 +61,26 @@ namespace TicktingApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-                Flight.Text = "";
-                From.Text = "";
-                To.Text = "";
-                Date.Text = "";     
+
+            reset();
+        }
+
+        public void reset()
+        {
+            Flight.Text = "";
+            From.Text = "";
+            To.Text = "";
+            Date.Text = "";
+            Seat.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Flight.Text == "" && From.Text == "" && To.Text == "" && Date.Text == "")
+            if (string.IsNullOrEmpty(Flight.Text) || string.IsNullOrEmpty(From.Text) || string.IsNullOrEmpty(To.Text) || string.IsNullOrEmpty(Date.Text))
             {
                 MessageBox.Show("Missing Information");
             }
-            else if(Flight.Text == "" && From.Text == "" && To.Text == "" && Date.Text == "" && Seat.Text == "")
+            else if(string.IsNullOrEmpty(Flight.Text) || string.IsNullOrEmpty(From.Text) || string.IsNullOrEmpty(To.Text) || string.IsNullOrEmpty(Date.Text) || !int.TryParse(Seat.Text, out int seatValue))
             {
 
                 MessageBox.Show("Enter seat number");

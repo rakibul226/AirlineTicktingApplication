@@ -50,15 +50,20 @@ namespace TicktingApplication
             Date.Text = AvaibleTicketShow.SelectedRows[0].Cells[3].Value.ToString();
         }
 
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void resetField()
         {
             Flight.Text = "";
             From.Text = "";
             To.Text = "";
             Date.Text = "";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            resetField();
+        }
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -79,6 +84,7 @@ namespace TicktingApplication
                     MessageBox.Show("Flight Deleted Successfully");
                     Con.Close();
                     populate();
+                    resetField();
                 }
                 catch (Exception Ex)
                 {

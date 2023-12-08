@@ -83,6 +83,12 @@
     <Compile Include="RemoveTicket.Designer.cs">
       <DependentUpon>RemoveTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="SoldTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoldTicket.Designer.cs">
+      <DependentUpon>SoldTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateFlight.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     </Compile>
     <Compile Include="UserAvaliableFlight.Designer.cs">
       <DependentUpon>UserAvaliableFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userBookedTickert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userBookedTickert.Designer.cs">
+      <DependentUpon>userBookedTickert.cs</DependentUpon>
     </Compile>
     <Compile Include="UserHome.cs">
       <SubType>Form</SubType>
@@ -151,6 +163,9 @@
     <EmbeddedResource Include="RemoveTicket.resx">
       <DependentUpon>RemoveTicket.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SoldTicket.resx">
+      <DependentUpon>SoldTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateFlight.resx">
       <DependentUpon>UpdateFlight.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserAvaliableFlight.resx">
       <DependentUpon>UserAvaliableFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userBookedTickert.resx">
+      <DependentUpon>userBookedTickert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
