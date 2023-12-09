@@ -17,8 +17,8 @@ namespace TicktingApplication
         {
             InitializeComponent();
         }
-        public string S_customer = "asus";
-       // public string S_customer =  GlobalVariablesClass.VariableOne ;
+        //public string S_customer = "asus";
+        public string S_customer =  GlobalVariablesClass.VariableOne ;
 
         private void userBookedTickert_Load(object sender, EventArgs e)
         {
@@ -46,5 +46,11 @@ namespace TicktingApplication
             }
         }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+            UserHome newHome = new UserHome();
+            newHome.Show();
+            this.Hide();
+        }
     }
 }

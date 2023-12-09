@@ -44,7 +44,7 @@ namespace TicktingApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new UpdateFlight().Show();
+            new UpdateFlight2().Show();
             this.Hide();
         }
     }
