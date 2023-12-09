@@ -19,7 +19,7 @@ namespace TicktingApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BuyTicket newTicket = new BuyTicket();
+            UserBuyTicket newTicket = new UserBuyTicket();
             newTicket.Show();
             this.Hide();
         }

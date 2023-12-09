@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewTicket.cs">
+    <Compile Include="AdminAddNewTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewTicket.Designer.cs">
-      <DependentUpon>AddNewTicket.cs</DependentUpon>
+    <Compile Include="AdminAddNewTicket.Designer.cs">
+      <DependentUpon>AdminAddNewTicket.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPassenger.cs">
+    <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPassenger.Designer.cs">
-      <DependentUpon>AddPassenger.cs</DependentUpon>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminHome.cs">
       <SubType>Form</SubType>
@@ -64,36 +64,36 @@
     <Compile Include="AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllTicket.cs">
+    <Compile Include="AdminViewAllTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllTicket.Designer.cs">
-      <DependentUpon>AllTicket.cs</DependentUpon>
+    <Compile Include="AdminViewAllTicket.Designer.cs">
+      <DependentUpon>AdminViewAllTicket.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuyTicket.cs">
+    <Compile Include="UserBuyTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuyTicket.Designer.cs">
-      <DependentUpon>BuyTicket.cs</DependentUpon>
+    <Compile Include="UserBuyTicket.Designer.cs">
+      <DependentUpon>UserBuyTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalVariablesClass.cs" />
-    <Compile Include="RemoveTicket.cs">
+    <Compile Include="AdminRemoveFlight.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RemoveTicket.Designer.cs">
-      <DependentUpon>RemoveTicket.cs</DependentUpon>
+    <Compile Include="AdminRemoveFlight.Designer.cs">
+      <DependentUpon>AdminRemoveFlight.cs</DependentUpon>
     </Compile>
-    <Compile Include="SoldTicket.cs">
+    <Compile Include="AdminSoldTicketView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SoldTicket.Designer.cs">
-      <DependentUpon>SoldTicket.cs</DependentUpon>
+    <Compile Include="AdminSoldTicketView.Designer.cs">
+      <DependentUpon>AdminSoldTicketView.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateFlight2.cs">
+    <Compile Include="AdminUpdateFlight2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateFlight2.Designer.cs">
-      <DependentUpon>UpdateFlight2.cs</DependentUpon>
+    <Compile Include="AdminUpdateFlight2.Designer.cs">
+      <DependentUpon>AdminUpdateFlight2.cs</DependentUpon>
     </Compile>
     <Compile Include="UserAvaliableFlight.cs">
       <SubType>Form</SubType>
@@ -101,11 +101,11 @@
     <Compile Include="UserAvaliableFlight.Designer.cs">
       <DependentUpon>UserAvaliableFlight.cs</DependentUpon>
     </Compile>
-    <Compile Include="userBookedTickert.cs">
+    <Compile Include="UserBookedTickert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="userBookedTickert.Designer.cs">
-      <DependentUpon>userBookedTickert.cs</DependentUpon>
+    <Compile Include="UserBookedTickert.Designer.cs">
+      <DependentUpon>UserBookedTickert.cs</DependentUpon>
     </Compile>
     <Compile Include="UserHome.cs">
       <SubType>Form</SubType>
@@ -113,11 +113,11 @@
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewPassenger.cs">
+    <Compile Include="AdminViewUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewPassenger.Designer.cs">
-      <DependentUpon>ViewPassenger.cs</DependentUpon>
+    <Compile Include="AdminViewUser.Designer.cs">
+      <DependentUpon>AdminViewUser.cs</DependentUpon>
     </Compile>
     <Compile Include="LandingPage.cs">
       <SubType>Form</SubType>
@@ -133,47 +133,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AdminViewTicket.cs">
+    <Compile Include="AdminViewOfferedTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminViewTicket.Designer.cs">
-      <DependentUpon>AdminViewTicket.cs</DependentUpon>
+    <Compile Include="AdminViewOfferedTicket.Designer.cs">
+      <DependentUpon>AdminViewOfferedTicket.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddNewTicket.resx">
-      <DependentUpon>AddNewTicket.cs</DependentUpon>
+    <EmbeddedResource Include="AdminAddNewTicket.resx">
+      <DependentUpon>AdminAddNewTicket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPassenger.resx">
-      <DependentUpon>AddPassenger.cs</DependentUpon>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllTicket.resx">
-      <DependentUpon>AllTicket.cs</DependentUpon>
+    <EmbeddedResource Include="AdminViewAllTicket.resx">
+      <DependentUpon>AdminViewAllTicket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuyTicket.resx">
-      <DependentUpon>BuyTicket.cs</DependentUpon>
+    <EmbeddedResource Include="UserBuyTicket.resx">
+      <DependentUpon>UserBuyTicket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RemoveTicket.resx">
-      <DependentUpon>RemoveTicket.cs</DependentUpon>
+    <EmbeddedResource Include="AdminRemoveFlight.resx">
+      <DependentUpon>AdminRemoveFlight.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SoldTicket.resx">
-      <DependentUpon>SoldTicket.cs</DependentUpon>
+    <EmbeddedResource Include="AdminSoldTicketView.resx">
+      <DependentUpon>AdminSoldTicketView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateFlight2.resx">
-      <DependentUpon>UpdateFlight2.cs</DependentUpon>
+    <EmbeddedResource Include="AdminUpdateFlight2.resx">
+      <DependentUpon>AdminUpdateFlight2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAvaliableFlight.resx">
       <DependentUpon>UserAvaliableFlight.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userBookedTickert.resx">
-      <DependentUpon>userBookedTickert.cs</DependentUpon>
+    <EmbeddedResource Include="UserBookedTickert.resx">
+      <DependentUpon>UserBookedTickert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewPassenger.resx">
-      <DependentUpon>ViewPassenger.cs</DependentUpon>
+    <EmbeddedResource Include="AdminViewUser.resx">
+      <DependentUpon>AdminViewUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.cs</DependentUpon>
@@ -191,8 +191,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="AdminViewTicket.resx">
-      <DependentUpon>AdminViewTicket.cs</DependentUpon>
+    <EmbeddedResource Include="AdminViewOfferedTicket.resx">
+      <DependentUpon>AdminViewOfferedTicket.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

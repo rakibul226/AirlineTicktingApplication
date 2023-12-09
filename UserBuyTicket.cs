@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TicktingApplication
 {
-    public partial class BuyTicket : Form
+    public partial class UserBuyTicket : Form
     {
-        public BuyTicket()
+        public UserBuyTicket()
         {
             InitializeComponent();
         }

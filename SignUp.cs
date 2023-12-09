@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace TicktingApplication
 {
-    public partial class AddPassenger : Form
+    public partial class SignUp : Form
     {
-        public AddPassenger()
+        public SignUp()
         {
             InitializeComponent();
         }

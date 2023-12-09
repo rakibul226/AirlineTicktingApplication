@@ -1,6 +1,6 @@
 ﻿namespace TicktingApplication
 {
-    partial class BuyTicket
+    partial class UserBuyTicket
     {
         /// <summary>
         /// Required designer variable.

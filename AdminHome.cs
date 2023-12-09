@@ -19,7 +19,7 @@ namespace TicktingApplication
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new ViewPassenger().Show();
+            new AdminViewUser().Show();
             this.Hide();
         }
 
@@ -31,7 +31,7 @@ namespace TicktingApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new AllTicket().Show();
+            new AdminViewAllTicket().Show();
             this.Hide();
         }
 
@@ -42,7 +42,7 @@ namespace TicktingApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new AdminViewTicket().Show();
+            new AdminViewOfferedTicket().Show();
             this.Hide();
         }
 

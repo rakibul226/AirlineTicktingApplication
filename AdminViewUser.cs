@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TicktingApplication
 {
-    public partial class ViewPassenger : Form
+    public partial class AdminViewUser : Form
     {
-        public ViewPassenger()
+        public AdminViewUser()
         {
             InitializeComponent();
         }

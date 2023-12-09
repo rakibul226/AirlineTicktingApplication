@@ -1,6 +1,6 @@
 ﻿namespace TicktingApplication
 {
-    partial class ViewPassenger
+    partial class AdminViewUser
     {
         /// <summary>
         /// Required designer variable.

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TicktingApplication
 {
-    public partial class AdminViewTicket : Form
+    public partial class AdminViewOfferedTicket : Form
     {
-        public AdminViewTicket()
+        public AdminViewOfferedTicket()
         {
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace TicktingApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SoldTicket viewTicket = new SoldTicket();
+            AdminSoldTicketView viewTicket = new AdminSoldTicketView();
             viewTicket.Show();
             this.Hide();
         }

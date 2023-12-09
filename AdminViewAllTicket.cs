@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TicktingApplication
 {
-    public partial class AllTicket : Form
+    public partial class AdminViewAllTicket : Form
     {
-        public AllTicket()
+        public AdminViewAllTicket()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace TicktingApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new RemoveTicket().Show();
+            new AdminRemoveFlight().Show();
             this.Hide();
         }
 
@@ -38,13 +38,13 @@ namespace TicktingApplication
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new AddNewTicket().Show();
+            new AdminAddNewTicket().Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new UpdateFlight2().Show();
+            new AdminUpdateFlight2().Show();
             this.Hide();
         }
     }

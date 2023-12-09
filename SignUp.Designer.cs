@@ -1,6 +1,6 @@
 ﻿namespace TicktingApplication
 {
-    partial class AddPassenger
+    partial class SignUp
     {
         /// <summary>
         /// Required designer variable.

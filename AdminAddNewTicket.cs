@@ -12,9 +12,9 @@ using System.Xml.Linq;
 
 namespace TicktingApplication
 {
-    public partial class AddNewTicket : Form
+    public partial class AdminAddNewTicket : Form
     {
-        public AddNewTicket() 
+        public AdminAddNewTicket() 
         {
 
             InitializeComponent();
@@ -56,7 +56,7 @@ namespace TicktingApplication
 
         private void label8_Click(object sender, EventArgs e)
         {
-            new AllTicket().Show();
+            new AdminViewAllTicket().Show();
             this.Hide();
         }
     }
