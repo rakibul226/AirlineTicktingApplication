@@ -28,34 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CancleByUser = new System.Windows.Forms.DataGridView();
-            this.RemoveByAdmin = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.CancleByUser)).BeginInit();
+            this.RemoveByAdmin = new System.Windows.Forms.DataGridView();
+            this.CancleByUser = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.RemoveByAdmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CancleByUser)).BeginInit();
             this.SuspendLayout();
-            // 
-            // CancleByUser
-            // 
-            this.CancleByUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CancleByUser.Location = new System.Drawing.Point(43, 274);
-            this.CancleByUser.Name = "CancleByUser";
-            this.CancleByUser.RowHeadersWidth = 51;
-            this.CancleByUser.RowTemplate.Height = 24;
-            this.CancleByUser.Size = new System.Drawing.Size(726, 164);
-            this.CancleByUser.TabIndex = 0;
-            // 
-            // RemoveByAdmin
-            // 
-            this.RemoveByAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.RemoveByAdmin.Location = new System.Drawing.Point(43, 59);
-            this.RemoveByAdmin.Name = "RemoveByAdmin";
-            this.RemoveByAdmin.RowHeadersWidth = 51;
-            this.RemoveByAdmin.RowTemplate.Height = 24;
-            this.RemoveByAdmin.Size = new System.Drawing.Size(726, 162);
-            this.RemoveByAdmin.TabIndex = 1;
             // 
             // label2
             // 
@@ -95,34 +75,56 @@
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // RemoveByAdmin
+            // 
+            this.RemoveByAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.RemoveByAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RemoveByAdmin.Location = new System.Drawing.Point(29, 59);
+            this.RemoveByAdmin.Name = "RemoveByAdmin";
+            this.RemoveByAdmin.RowHeadersWidth = 51;
+            this.RemoveByAdmin.RowTemplate.Height = 24;
+            this.RemoveByAdmin.Size = new System.Drawing.Size(742, 169);
+            this.RemoveByAdmin.TabIndex = 50;
+            // 
+            // CancleByUser
+            // 
+            this.CancleByUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.CancleByUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CancleByUser.Location = new System.Drawing.Point(29, 269);
+            this.CancleByUser.Name = "CancleByUser";
+            this.CancleByUser.RowHeadersWidth = 51;
+            this.CancleByUser.RowTemplate.Height = 24;
+            this.CancleByUser.Size = new System.Drawing.Size(742, 169);
+            this.CancleByUser.TabIndex = 51;
+            this.CancleByUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // AdminViewCancledTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CancleByUser);
+            this.Controls.Add(this.RemoveByAdmin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.RemoveByAdmin);
-            this.Controls.Add(this.CancleByUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminViewCancledTicket";
             this.Text = "AdminViewCancledTicket";
             this.Load += new System.EventHandler(this.AdminViewCancledTicket_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CancleByUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RemoveByAdmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CancleByUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView CancleByUser;
-        private System.Windows.Forms.DataGridView RemoveByAdmin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView RemoveByAdmin;
+        private System.Windows.Forms.DataGridView CancleByUser;
     }
 }
