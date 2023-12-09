@@ -89,12 +89,6 @@
     <Compile Include="SoldTicket.Designer.cs">
       <DependentUpon>SoldTicket.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateFlight.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateFlight.Designer.cs">
-      <DependentUpon>UpdateFlight.cs</DependentUpon>
-    </Compile>
     <Compile Include="UpdateFlight2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +133,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewTicket.cs">
+    <Compile Include="AdminViewTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewTicket.Designer.cs">
-      <DependentUpon>ViewTicket.cs</DependentUpon>
+    <Compile Include="AdminViewTicket.Designer.cs">
+      <DependentUpon>AdminViewTicket.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddNewTicket.resx">
       <DependentUpon>AddNewTicket.cs</DependentUpon>
@@ -165,9 +159,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SoldTicket.resx">
       <DependentUpon>SoldTicket.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateFlight.resx">
-      <DependentUpon>UpdateFlight.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateFlight2.resx">
       <DependentUpon>UpdateFlight2.cs</DependentUpon>
@@ -200,8 +191,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ViewTicket.resx">
-      <DependentUpon>ViewTicket.cs</DependentUpon>
+    <EmbeddedResource Include="AdminViewTicket.resx">
+      <DependentUpon>AdminViewTicket.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

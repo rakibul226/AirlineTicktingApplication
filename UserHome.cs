@@ -48,7 +48,7 @@ namespace TicktingApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            userBookedTickert newUserBTbl = new userBookedTickert();
+            UserBookedTickert newUserBTbl = new UserBookedTickert();
             newUserBTbl.Show();
             this.Hide();
         }

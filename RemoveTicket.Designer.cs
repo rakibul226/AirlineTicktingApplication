@@ -41,6 +41,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Seat = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +77,7 @@
             this.AvaibleTicketShow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.AvaibleTicketShow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AvaibleTicketShow.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AvaibleTicketShow.Location = new System.Drawing.Point(31, 211);
+            this.AvaibleTicketShow.Location = new System.Drawing.Point(33, 200);
             this.AvaibleTicketShow.Name = "AvaibleTicketShow";
             this.AvaibleTicketShow.ReadOnly = true;
             this.AvaibleTicketShow.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -88,7 +90,7 @@
             // To
             // 
             this.To.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.To.Location = new System.Drawing.Point(452, 114);
+            this.To.Location = new System.Drawing.Point(354, 114);
             this.To.Name = "To";
             this.To.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.To.Size = new System.Drawing.Size(106, 30);
@@ -98,7 +100,7 @@
             // Date
             // 
             this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Location = new System.Drawing.Point(649, 114);
+            this.Date.Location = new System.Drawing.Point(520, 114);
             this.Date.Name = "Date";
             this.Date.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.Date.Size = new System.Drawing.Size(106, 30);
@@ -108,7 +110,7 @@
             // From
             // 
             this.From.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.From.Location = new System.Drawing.Point(236, 114);
+            this.From.Location = new System.Drawing.Point(198, 114);
             this.From.Name = "From";
             this.From.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.From.Size = new System.Drawing.Size(106, 30);
@@ -121,7 +123,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(462, 88);
+            this.label1.Location = new System.Drawing.Point(370, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 23);
             this.label1.TabIndex = 40;
@@ -133,7 +135,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(243, 88);
+            this.label3.Location = new System.Drawing.Point(214, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 23);
             this.label3.TabIndex = 42;
@@ -145,7 +147,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(654, 88);
+            this.label4.Location = new System.Drawing.Point(538, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 23);
             this.label4.TabIndex = 43;
@@ -203,12 +205,36 @@
             this.label2.TabIndex = 46;
             this.label2.Text = "Avaliable Flight";
             // 
+            // Seat
+            // 
+            this.Seat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seat.Location = new System.Drawing.Point(669, 114);
+            this.Seat.Name = "Seat";
+            this.Seat.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Seat.Size = new System.Drawing.Size(106, 30);
+            this.Seat.TabIndex = 47;
+            this.Seat.Text = " ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(677, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 23);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "Seat :";
+            // 
             // RemoveTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Seat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
@@ -247,5 +273,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox Seat;
+        private System.Windows.Forms.Label label6;
     }
 }

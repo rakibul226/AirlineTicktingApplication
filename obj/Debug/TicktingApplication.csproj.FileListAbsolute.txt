@@ -16,10 +16,9 @@ C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AllTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AddNewTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.RemoveTicket.resources
-C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.ViewTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UserAvaliableFlight.resources
-C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UpdateFlight.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.UpdateFlight2.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.BuyTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.SoldTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.userBookedTickert.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AdminViewTicket.resources
