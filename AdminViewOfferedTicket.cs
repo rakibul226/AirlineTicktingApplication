@@ -53,5 +53,11 @@ namespace TicktingApplication
             viewTicket.Show();
             this.Hide();
         }
+
+        private void ViewCanceledTicket_Click(object sender, EventArgs e)
+        {
+            new AdminViewCancledTicket().Show();
+            this.Hide();
+        }
     }
 }

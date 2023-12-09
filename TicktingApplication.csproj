@@ -52,6 +52,12 @@
     <Compile Include="AdminAddNewTicket.Designer.cs">
       <DependentUpon>AdminAddNewTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminViewCancledTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewCancledTicket.Designer.cs">
+      <DependentUpon>AdminViewCancledTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="AdminAddNewTicket.resx">
       <DependentUpon>AdminAddNewTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewCancledTicket.resx">
+      <DependentUpon>AdminViewCancledTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>

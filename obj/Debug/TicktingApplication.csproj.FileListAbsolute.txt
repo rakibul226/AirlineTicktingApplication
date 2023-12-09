@@ -22,3 +22,4 @@ C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AdminViewOfferedTicket.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AdminRemoveFlight.resources
 C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AdminUpdateFlight2.resources
+C:\Users\Rakibul\source\repos\TicktingApplication\obj\Debug\TicktingApplication.AdminViewCancledTicket.resources

@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.AvaibleTicketShow = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
+            this.ViewCanceledTicket = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,10 +42,10 @@
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(253, 382);
+            this.button1.Location = new System.Drawing.Point(113, 381);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(339, 38);
+            this.button1.Size = new System.Drawing.Size(293, 38);
             this.button1.TabIndex = 7;
             this.button1.Text = "View Sold Ticket";
             this.button1.UseVisualStyleBackColor = false;
@@ -101,12 +102,27 @@
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // ViewTicket
+            // ViewCanceledTicket
+            // 
+            this.ViewCanceledTicket.BackColor = System.Drawing.Color.Crimson;
+            this.ViewCanceledTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewCanceledTicket.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ViewCanceledTicket.Location = new System.Drawing.Point(412, 381);
+            this.ViewCanceledTicket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ViewCanceledTicket.Name = "ViewCanceledTicket";
+            this.ViewCanceledTicket.Size = new System.Drawing.Size(293, 38);
+            this.ViewCanceledTicket.TabIndex = 37;
+            this.ViewCanceledTicket.Text = "View Canceled Ticket";
+            this.ViewCanceledTicket.UseVisualStyleBackColor = false;
+            this.ViewCanceledTicket.Click += new System.EventHandler(this.ViewCanceledTicket_Click);
+            // 
+            // AdminViewOfferedTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ViewCanceledTicket);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.AvaibleTicketShow);
             this.Controls.Add(this.label2);
@@ -114,7 +130,7 @@
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ViewTicket";
+            this.Name = "AdminViewOfferedTicket";
             this.Text = "ViewTicket";
             this.Load += new System.EventHandler(this.ViewTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).EndInit();
@@ -129,5 +145,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView AvaibleTicketShow;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button ViewCanceledTicket;
     }
 }

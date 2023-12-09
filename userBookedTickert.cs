@@ -77,6 +77,7 @@ namespace TicktingApplication
             From.Text = "";
             To.Text = "";
             Date.Text = "";
+            Seat.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -96,6 +97,7 @@ namespace TicktingApplication
             {
                 AddToCancleTable();
                 DeleteFlight();
+                resetField();
 
             }
         }
