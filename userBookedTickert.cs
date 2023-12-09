@@ -17,28 +17,34 @@ namespace TicktingApplication
         {
             InitializeComponent();
         }
+        public string S_customer = "asus";
+       // public string S_customer =  GlobalVariablesClass.VariableOne ;
 
         private void userBookedTickert_Load(object sender, EventArgs e)
         {
             populate();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
-        //public string S_customer =  GlobalVariablesClass.VariableOne ;
-        public string S_customer =  "user";
+
         private void populate()
         {
-            Con.Open();
+            using (SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True"))
+            {
+                Con.Open();
 
-            string query = "select * from BookedTicket WHERE Customer =" + S_customer + "";
+                string query = "select * from BookedTicket WHERE Customer like @customer";
+                using (SqlCommand cmd = new SqlCommand(query, Con))
+                {
+                    cmd.Parameters.AddWithValue("@customer", "%" + S_customer + "%");
 
-            //string query = "select * from BookedTicket WHERE Customer = '" + S_customer + "'";
-            //string query = "select * from BookedTicket";
-            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            userBookedTicket.DataSource = ds.Tables[0];
-            Con.Close();
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    var ds = new DataSet();
+                    sda.Fill(ds);
+                    userBookedTicket.DataSource = ds.Tables[0];
+                }
+
+                Con.Close();
+            }
         }
+
     }
 }
