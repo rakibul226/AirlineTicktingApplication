@@ -43,11 +43,12 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(316, 244);
+            this.label2.Location = new System.Drawing.Point(311, 239);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(183, 27);
             this.label2.TabIndex = 47;
             this.label2.Text = "CancledByUser";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -68,7 +69,7 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(752, 20);
+            this.label8.Location = new System.Drawing.Point(752, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(36, 36);
             this.label8.TabIndex = 49;

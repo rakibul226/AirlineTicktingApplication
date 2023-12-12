@@ -41,11 +41,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(244, 59);
+            this.label1.Location = new System.Drawing.Point(340, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 40);
+            this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Biman Bangladesh";
+            this.label1.Text = "AirSWIFT";
             // 
             // label2
             // 

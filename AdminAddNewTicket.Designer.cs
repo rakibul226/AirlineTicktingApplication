@@ -230,13 +230,13 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(270, 19);
+            this.label7.Location = new System.Drawing.Point(358, 29);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(317, 40);
+            this.label7.Size = new System.Drawing.Size(146, 40);
             this.label7.TabIndex = 38;
-            this.label7.Text = "Biman Bangladesh";
+            this.label7.Text = "AirSWIFT";
             // 
-            // AddNewTicket
+            // AdminAddNewTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -259,7 +259,7 @@
             this.Controls.Add(this.button3);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddNewTicket";
+            this.Name = "AdminAddNewTicket";
             this.Text = "AddNewTicket";
             this.Load += new System.EventHandler(this.AddNewTicket_Load);
             this.ResumeLayout(false);

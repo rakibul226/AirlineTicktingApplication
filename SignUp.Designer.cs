@@ -56,11 +56,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(245, 13);
+            this.label1.Location = new System.Drawing.Point(367, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 40);
+            this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Biman Bangladesh";
+            this.label1.Text = "AirSWIFT";
             // 
             // label2
             // 
@@ -291,7 +291,7 @@
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click_1);
             // 
-            // AddPassenger
+            // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -320,7 +320,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.CadetBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddPassenger";
+            this.Name = "SignUp";
             this.Text = "AddPassenger";
             this.Load += new System.EventHandler(this.AddPassenger_Load);
             this.ResumeLayout(false);

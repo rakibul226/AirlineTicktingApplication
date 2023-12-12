@@ -52,11 +52,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(235, 33);
+            this.label1.Location = new System.Drawing.Point(364, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 40);
+            this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Biman Bangladesh";
+            this.label1.Text = "AirSWIFT";
             // 
             // button3
             // 
@@ -187,9 +187,9 @@
             this.label4.ForeColor = System.Drawing.Color.Green;
             this.label4.Location = new System.Drawing.Point(447, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 23);
+            this.label4.Size = new System.Drawing.Size(37, 23);
             this.label4.TabIndex = 44;
-            this.label4.Text = "User";
+            this.label4.Text = "***";
             // 
             // UserHome
             // 

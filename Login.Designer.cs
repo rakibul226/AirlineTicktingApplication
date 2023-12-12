@@ -47,11 +47,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(271, 54);
+            this.label1.Location = new System.Drawing.Point(347, 79);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 50);
+            this.label1.Size = new System.Drawing.Size(179, 50);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Biman Bangladesh";
+            this.label1.Text = "AirSWIFT";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -60,11 +60,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(223, 253);
+            this.label2.Location = new System.Drawing.Point(181, 253);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 40);
+            this.label2.Size = new System.Drawing.Size(201, 40);
             this.label2.TabIndex = 3;
-            this.label2.Text = "User Id:";
+            this.label2.Text = "User Name:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -73,7 +73,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(181, 330);
+            this.label3.Location = new System.Drawing.Point(206, 330);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 40);
             this.label3.TabIndex = 4;

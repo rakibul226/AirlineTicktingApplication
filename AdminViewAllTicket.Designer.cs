@@ -85,11 +85,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(269, 25);
+            this.label1.Location = new System.Drawing.Point(368, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 40);
+            this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Biman Bangladesh";
+            this.label1.Text = "AirSWIFT";
             // 
             // label8
             // 
@@ -117,7 +117,7 @@
             this.label4.TabIndex = 39;
             this.label4.Text = "All Ticket";
             // 
-            // AllTicket
+            // AdminViewAllTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AllTicket";
+            this.Name = "AdminViewAllTicket";
             this.Text = "AllTicket";
             this.Load += new System.EventHandler(this.AllTicket_Load);
             this.ResumeLayout(false);
