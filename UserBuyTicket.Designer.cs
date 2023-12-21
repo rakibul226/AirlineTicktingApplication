@@ -42,6 +42,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.Seat = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.TDate = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +88,7 @@
             // From
             // 
             this.From.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.From.Location = new System.Drawing.Point(187, 322);
+            this.From.Location = new System.Drawing.Point(177, 322);
             this.From.Name = "From";
             this.From.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.From.Size = new System.Drawing.Size(106, 30);
@@ -100,7 +101,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(204, 296);
+            this.label3.Location = new System.Drawing.Point(183, 296);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 23);
             this.label3.TabIndex = 47;
@@ -109,7 +110,7 @@
             // To
             // 
             this.To.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.To.Location = new System.Drawing.Point(339, 322);
+            this.To.Location = new System.Drawing.Point(317, 322);
             this.To.Name = "To";
             this.To.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.To.Size = new System.Drawing.Size(106, 30);
@@ -122,7 +123,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(353, 296);
+            this.label1.Location = new System.Drawing.Point(331, 296);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 23);
             this.label1.TabIndex = 49;
@@ -131,7 +132,7 @@
             // Date
             // 
             this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Location = new System.Drawing.Point(490, 322);
+            this.Date.Location = new System.Drawing.Point(459, 322);
             this.Date.Name = "Date";
             this.Date.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.Date.Size = new System.Drawing.Size(106, 30);
@@ -144,7 +145,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(497, 296);
+            this.label4.Location = new System.Drawing.Point(468, 296);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 23);
             this.label4.TabIndex = 51;
@@ -214,12 +215,23 @@
             this.label2.TabIndex = 56;
             this.label2.Text = "Seat :";
             // 
-            // BuyTicket
+            // TDate
+            // 
+            this.TDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TDate.Location = new System.Drawing.Point(358, 15);
+            this.TDate.Name = "TDate";
+            this.TDate.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.TDate.Size = new System.Drawing.Size(106, 30);
+            this.TDate.TabIndex = 57;
+            this.TDate.Text = " ";
+            // 
+            // UserBuyTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Seat);
             this.Controls.Add(this.label8);
@@ -236,7 +248,7 @@
             this.Controls.Add(this.AvaibleTicketShow);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "BuyTicket";
+            this.Name = "UserBuyTicket";
             this.Text = "BuyTicket";
             this.Load += new System.EventHandler(this.BuyTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).EndInit();
@@ -261,5 +273,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Seat;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TDate;
     }
 }

@@ -43,7 +43,7 @@ namespace TicktingApplication
 
         private void UserHome_Load(object sender, EventArgs e)
         {
-            SUser.Text =  GlobalVariablesClass.VariableOne ;
+            user2.Text =  GlobalVariablesClass.VariableOne ;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,6 +51,11 @@ namespace TicktingApplication
             UserBookedTickert newUserBTbl = new UserBookedTickert();
             newUserBTbl.Show();
             this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

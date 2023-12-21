@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.PassId = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(367, 13);
+            this.label1.Location = new System.Drawing.Point(345, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 3;
@@ -68,7 +68,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(279, 66);
+            this.label2.Location = new System.Drawing.Point(277, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 34);
             this.label2.TabIndex = 4;
@@ -87,15 +87,15 @@
             this.label3.Text = "Password:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // PassId
+            // Password
             // 
-            this.PassId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassId.Location = new System.Drawing.Point(374, 207);
-            this.PassId.Name = "PassId";
-            this.PassId.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.PassId.Size = new System.Drawing.Size(188, 38);
-            this.PassId.TabIndex = 8;
-            this.PassId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.Location = new System.Drawing.Point(374, 207);
+            this.Password.Name = "Password";
+            this.Password.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Password.Size = new System.Drawing.Size(188, 38);
+            this.Password.TabIndex = 8;
+            this.Password.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -314,7 +314,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.PassId);
+            this.Controls.Add(this.Password);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -333,7 +333,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox PassId;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

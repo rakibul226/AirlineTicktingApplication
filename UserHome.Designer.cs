@@ -43,6 +43,7 @@
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SUser = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.user2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,9 +188,21 @@
             this.label4.ForeColor = System.Drawing.Color.Green;
             this.label4.Location = new System.Drawing.Point(447, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 23);
+            this.label4.Size = new System.Drawing.Size(0, 23);
             this.label4.TabIndex = 44;
-            this.label4.Text = "***";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // user2
+            // 
+            this.user2.AutoSize = true;
+            this.user2.BackColor = System.Drawing.Color.Transparent;
+            this.user2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user2.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.user2.Location = new System.Drawing.Point(453, 89);
+            this.user2.Name = "user2";
+            this.user2.Size = new System.Drawing.Size(16, 23);
+            this.user2.TabIndex = 45;
+            this.user2.Text = ".";
             // 
             // UserHome
             // 
@@ -199,6 +212,7 @@
             this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.user2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.SUser);
             this.Controls.Add(this.label8);
@@ -234,5 +248,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
         private System.Windows.Forms.Label SUser;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label user2;
     }
 }

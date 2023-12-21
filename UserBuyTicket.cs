@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace TicktingApplication
 {
@@ -42,6 +43,11 @@ namespace TicktingApplication
         {
              
             populate();
+            TDate.Text = DateTime.Today.ToString("dd-MM-yyyy");
+
+           
+
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -90,7 +96,7 @@ namespace TicktingApplication
                 try
                 {
                     Con.Open();
-                    string query = "insert into BookedTicket values('" + Flight.Text + "','" + From.Text + "','" + To.Text + "','" + Date.Text + "','" + Seat.Text + "','"+ Customer + "')";
+                    string query = "insert into BookedTicket values('" + Flight.Text + "','" + From.Text + "','" + To.Text + "','" + Date.Text + "','" + Seat.Text + "','"+ Customer + "','"+ TDate.Text + "')";
 
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();

@@ -51,13 +51,19 @@ namespace TicktingApplication
         }
 
         SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
-        
 
-    
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (PassId.Text == "" || PassAd.Text == "" || PassName.Text == "" || PassportTb.Text == "" || PhoneTb.Text == "")
+            string passName = PassName.Text.Trim();
+            string password = Password.Text.Trim();
+            string passTb = PassportTb.Text.Trim();
+            string passAd = PassAd.Text.Trim();
+            string phoneTb = PhoneTb.Text.Trim();
+
+            if (password == "" || passAd == "" || passName == "" || passTb == "" || phoneTb == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -66,19 +72,22 @@ namespace TicktingApplication
                 try
                 {
                     Con.Open();
-                    string query= "insert into PassengerTbl values(" + PassId.Text + ",'" + PassName.Text + "','" + PassportTb.Text + "','" + PassAd.Text + "','" + PassNat.SelectedItem.ToString() + "','" + PassGend.SelectedItem.ToString() + "','" + PhoneTb.Text + "')";
+
+                    string query = "INSERT INTO PassengerTbl VALUES('" + passName + "','" + password + "','" + passTb + "','" + passAd + "','" + PassNat.SelectedItem.ToString() + "','" + PassGend.SelectedItem.ToString() + "','" + phoneTb + "')";
 
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Passenger Recorded Successfully");
+                    reset();
                     Con.Close();
-                }catch(Exception Ex)
+                }
+                catch (Exception Ex)
                 {
                     MessageBox.Show(Ex.Message);
                 }
-
             }
         }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -98,18 +107,23 @@ namespace TicktingApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PassId.Text = "";
-            PassAd.Text = "";
-            PassName.Text = "";
-            PassportTb.Text ="";
-            PhoneTb.Text = "";
-
+            reset();
         }
 
         private void label8_Click_1(object sender, EventArgs e)
         {
             new Login().Show();
             this.Hide();
+        }
+        public void reset()
+        {
+            Password.Text = "";
+            PassAd.Text = "";
+            PassName.Text = "";
+            PassNat.Text = "";
+            PassGend.Text = "";
+            PassportTb.Text = "";
+            PhoneTb.Text = "";
         }
     }
 }

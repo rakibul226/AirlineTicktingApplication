@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -56,37 +57,61 @@ namespace TicktingApplication
 
         }
 
+        SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
+
         private void button1_Click(object sender, EventArgs e)
         {
-            const string adminUsername = "admin";
-            const string adminPassword = "admin";
+            
             string username = UserId.Text.Trim();
             string password = UserPass.Text.Trim();
-
-            //OUser oUser = new OUser();
-            //  DataTable dt = new DataTable();
-            // dt = oUser.UserAuthentication(username, password);
+            string adminUsername = "admin";
+            string adminPassword = "admin";
 
 
-            if (username == adminUsername && password == adminPassword)
+            try
             {
-                
-                GlobalVariablesClass.VariableOne = UserId.Text;
-                new AdminHome().Show();
-                this.Hide();
+                String query = "SELECT * FROM PassengerTbl WHERE PassName = '" + username + "' AND Password = '" + password + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+
+                if(dtable.Rows.Count > 0)
+                {
+                    UserHome newLogin = new UserHome();
+                    GlobalVariablesClass.VariableOne = UserId.Text;
+                    newLogin.Show();
+                    this.Hide();
+
+                }
+                else if (username == adminUsername && password == adminPassword)
+                {
+
+                    GlobalVariablesClass.VariableOne = UserId.Text;
+                    new AdminHome().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid user");
+                }
+
             }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
+            finally
+            {
+                Con.Close();
+            }
+
+
+
+           
             
-            else if(username == "user" && password == "user")
-            {
-               
-                GlobalVariablesClass.VariableOne = UserId.Text;
-                new UserHome().Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Invalid user");
-            }
+            
+            
 
 
         }
