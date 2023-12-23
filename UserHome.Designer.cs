@@ -53,7 +53,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(364, 31);
+            this.label1.Location = new System.Drawing.Point(358, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 3;
@@ -69,7 +69,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(220, 38);
             this.button3.TabIndex = 7;
-            this.button3.Text = "Available Ticket";
+            this.button3.Text = "All Ticket";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -225,6 +225,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserHome";
             this.Load += new System.EventHandler(this.UserHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

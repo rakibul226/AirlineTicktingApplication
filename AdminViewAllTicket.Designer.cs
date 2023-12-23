@@ -85,7 +85,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(368, 9);
+            this.label1.Location = new System.Drawing.Point(358, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 9;
@@ -133,6 +133,7 @@
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminViewAllTicket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AllTicket";
             this.Load += new System.EventHandler(this.AllTicket_Load);
             this.ResumeLayout(false);

@@ -37,7 +37,7 @@ namespace TicktingApplication
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new UserAvaliableFlight().Show();
+            new UserAllTicket().Show();
             this.Hide();
         }
 

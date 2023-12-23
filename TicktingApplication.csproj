@@ -76,6 +76,12 @@
     <Compile Include="AdminViewAllTicket.Designer.cs">
       <DependentUpon>AdminViewAllTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAllTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAllTicket.Designer.cs">
+      <DependentUpon>UserAllTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserBuyTicket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     <Compile Include="AdminViewOfferedTicket.Designer.cs">
       <DependentUpon>AdminViewOfferedTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserViewCancledTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserViewCancledTicket.Designer.cs">
+      <DependentUpon>UserViewCancledTicket.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminAddNewTicket.resx">
       <DependentUpon>AdminAddNewTicket.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminViewAllTicket.resx">
       <DependentUpon>AdminViewAllTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAllTicket.resx">
+      <DependentUpon>UserAllTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserBuyTicket.resx">
       <DependentUpon>UserBuyTicket.cs</DependentUpon>
@@ -202,6 +217,9 @@
     </Compile>
     <EmbeddedResource Include="AdminViewOfferedTicket.resx">
       <DependentUpon>AdminViewOfferedTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserViewCancledTicket.resx">
+      <DependentUpon>UserViewCancledTicket.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

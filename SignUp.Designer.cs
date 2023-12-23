@@ -56,7 +56,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(345, 13);
+            this.label1.Location = new System.Drawing.Point(358, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 3;
@@ -67,8 +67,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(277, 77);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(306, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 34);
             this.label2.TabIndex = 4;
@@ -80,7 +80,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(194, 211);
+            this.label3.Location = new System.Drawing.Point(12, 207);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 32);
             this.label3.TabIndex = 5;
@@ -90,7 +90,7 @@
             // Password
             // 
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(374, 207);
+            this.Password.Location = new System.Drawing.Point(161, 207);
             this.Password.Name = "Password";
             this.Password.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.Password.Size = new System.Drawing.Size(188, 38);
@@ -103,7 +103,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(233, 553);
+            this.label4.Location = new System.Drawing.Point(51, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 32);
             this.label4.TabIndex = 9;
@@ -115,7 +115,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(219, 482);
+            this.label5.Location = new System.Drawing.Point(458, 278);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 32);
             this.label5.TabIndex = 10;
@@ -128,7 +128,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label6.Location = new System.Drawing.Point(175, 416);
+            this.label6.Location = new System.Drawing.Point(414, 222);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(157, 32);
             this.label6.TabIndex = 11;
@@ -140,7 +140,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(211, 345);
+            this.label7.Location = new System.Drawing.Point(31, 259);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 32);
             this.label7.TabIndex = 12;
@@ -152,7 +152,7 @@
             this.Passport.BackColor = System.Drawing.Color.Transparent;
             this.Passport.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Passport.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.Passport.Location = new System.Drawing.Point(155, 280);
+            this.Passport.Location = new System.Drawing.Point(395, 162);
             this.Passport.Name = "Passport";
             this.Passport.Size = new System.Drawing.Size(176, 32);
             this.Passport.TabIndex = 13;
@@ -164,7 +164,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label9.Location = new System.Drawing.Point(233, 144);
+            this.label9.Location = new System.Drawing.Point(52, 162);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 32);
             this.label9.TabIndex = 14;
@@ -174,7 +174,7 @@
             // PassportTb
             // 
             this.PassportTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassportTb.Location = new System.Drawing.Point(374, 280);
+            this.PassportTb.Location = new System.Drawing.Point(586, 162);
             this.PassportTb.Name = "PassportTb";
             this.PassportTb.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.PassportTb.Size = new System.Drawing.Size(188, 38);
@@ -184,7 +184,7 @@
             // PassAd
             // 
             this.PassAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassAd.Location = new System.Drawing.Point(374, 345);
+            this.PassAd.Location = new System.Drawing.Point(161, 259);
             this.PassAd.Name = "PassAd";
             this.PassAd.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.PassAd.Size = new System.Drawing.Size(188, 38);
@@ -194,7 +194,7 @@
             // PassName
             // 
             this.PassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassName.Location = new System.Drawing.Point(374, 144);
+            this.PassName.Location = new System.Drawing.Point(161, 156);
             this.PassName.Name = "PassName";
             this.PassName.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.PassName.Size = new System.Drawing.Size(188, 38);
@@ -204,7 +204,7 @@
             // PhoneTb
             // 
             this.PhoneTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneTb.Location = new System.Drawing.Point(374, 547);
+            this.PhoneTb.Location = new System.Drawing.Point(161, 314);
             this.PhoneTb.Name = "PhoneTb";
             this.PhoneTb.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.PhoneTb.Size = new System.Drawing.Size(188, 38);
@@ -220,7 +220,7 @@
             "Indian",
             "Chinese",
             "Spanish"});
-            this.PassNat.Location = new System.Drawing.Point(374, 409);
+            this.PassNat.Location = new System.Drawing.Point(586, 222);
             this.PassNat.Name = "PassNat";
             this.PassNat.Size = new System.Drawing.Size(188, 39);
             this.PassNat.TabIndex = 21;
@@ -233,7 +233,7 @@
             this.PassGend.Items.AddRange(new object[] {
             "MALE",
             "FEMALE"});
-            this.PassGend.Location = new System.Drawing.Point(374, 478);
+            this.PassGend.Location = new System.Drawing.Point(586, 278);
             this.PassGend.Name = "PassGend";
             this.PassGend.Size = new System.Drawing.Size(188, 39);
             this.PassGend.TabIndex = 23;
@@ -244,7 +244,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(533, 631);
+            this.button2.Location = new System.Drawing.Point(643, 362);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 42);
             this.button2.TabIndex = 24;
@@ -258,7 +258,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(374, 631);
+            this.button1.Location = new System.Drawing.Point(464, 371);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 42);
             this.button1.TabIndex = 25;
@@ -296,8 +296,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(800, 734);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
@@ -321,6 +322,7 @@
             this.ForeColor = System.Drawing.Color.CadetBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPassenger";
             this.Load += new System.EventHandler(this.AddPassenger_Load);
             this.ResumeLayout(false);

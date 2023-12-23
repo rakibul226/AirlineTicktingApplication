@@ -47,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(342, 28);
+            this.label1.Location = new System.Drawing.Point(358, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 40);
             this.label1.TabIndex = 2;
@@ -59,7 +59,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(319, 83);
+            this.label2.Location = new System.Drawing.Point(361, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 23);
             this.label2.TabIndex = 3;
@@ -152,7 +152,7 @@
             this.SUser.BackColor = System.Drawing.Color.Transparent;
             this.SUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SUser.ForeColor = System.Drawing.Color.Green;
-            this.SUser.Location = new System.Drawing.Point(442, 83);
+            this.SUser.Location = new System.Drawing.Point(484, 83);
             this.SUser.Name = "SUser";
             this.SUser.Size = new System.Drawing.Size(46, 23);
             this.SUser.TabIndex = 45;
@@ -177,6 +177,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminHome";
             this.Load += new System.EventHandler(this.AdminHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

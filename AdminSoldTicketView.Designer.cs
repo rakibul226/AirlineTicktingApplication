@@ -30,6 +30,8 @@
         {
             this.SoldTicker = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SoldTicker)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +42,7 @@
             this.SoldTicker.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.SoldTicker.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SoldTicker.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.SoldTicker.Location = new System.Drawing.Point(29, 88);
+            this.SoldTicker.Location = new System.Drawing.Point(32, 179);
             this.SoldTicker.Name = "SoldTicker";
             this.SoldTicker.ReadOnly = true;
             this.SoldTicker.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -63,16 +65,44 @@
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // SoldTicket
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(330, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 40);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "AirSWIFT";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(333, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 23);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "All Sold Ticket";
+            // 
+            // AdminSoldTicketView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.SoldTicker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SoldTicket";
+            this.Name = "AdminSoldTicketView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SoldTicket";
             this.Load += new System.EventHandler(this.SoldTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SoldTicker)).EndInit();
@@ -85,5 +115,7 @@
 
         private System.Windows.Forms.DataGridView SoldTicker;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

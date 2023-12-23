@@ -47,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(347, 79);
+            this.label1.Location = new System.Drawing.Point(358, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 50);
             this.label1.TabIndex = 2;
@@ -60,7 +60,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(181, 253);
+            this.label2.Location = new System.Drawing.Point(188, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(201, 40);
             this.label2.TabIndex = 3;
@@ -73,7 +73,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(206, 330);
+            this.label3.Location = new System.Drawing.Point(213, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 40);
             this.label3.TabIndex = 4;
@@ -85,7 +85,7 @@
             this.Login_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_Button.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Login_Button.Location = new System.Drawing.Point(395, 427);
+            this.Login_Button.Location = new System.Drawing.Point(408, 313);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(131, 42);
             this.Login_Button.TabIndex = 5;
@@ -99,7 +99,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(532, 427);
+            this.button2.Location = new System.Drawing.Point(543, 313);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 42);
             this.button2.TabIndex = 6;
@@ -110,7 +110,7 @@
             // UserId
             // 
             this.UserId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserId.Location = new System.Drawing.Point(395, 257);
+            this.UserId.Location = new System.Drawing.Point(408, 193);
             this.UserId.Name = "UserId";
             this.UserId.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.UserId.Size = new System.Drawing.Size(268, 38);
@@ -120,7 +120,7 @@
             // UserPass
             // 
             this.UserPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserPass.Location = new System.Drawing.Point(395, 334);
+            this.UserPass.Location = new System.Drawing.Point(406, 253);
             this.UserPass.Name = "UserPass";
             this.UserPass.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.UserPass.Size = new System.Drawing.Size(268, 38);
@@ -144,7 +144,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(373, 503);
+            this.label5.Location = new System.Drawing.Point(384, 384);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 22);
             this.label5.TabIndex = 10;
@@ -157,7 +157,7 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(532, 494);
+            this.button3.Location = new System.Drawing.Point(543, 375);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 42);
             this.button3.TabIndex = 11;
@@ -184,7 +184,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(802, 547);
+            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label5);
@@ -198,6 +199,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

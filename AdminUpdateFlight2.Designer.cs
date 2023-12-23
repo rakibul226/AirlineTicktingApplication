@@ -42,6 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Date2 = new System.Windows.Forms.DateTimePicker();
             this.Flight2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -213,12 +214,26 @@
             this.Flight2.TabIndex = 17;
             this.Flight2.Text = " ";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(358, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 40);
+            this.label2.TabIndex = 64;
+            this.label2.Text = "AirSWIFT";
+            // 
             // AdminUpdateFlight2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Date2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -235,6 +250,7 @@
             this.Controls.Add(this.From2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminUpdateFlight2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateFlight2";
             this.Load += new System.EventHandler(this.UpdateFlight2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow2)).EndInit();
@@ -258,5 +274,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker Date2;
         private System.Windows.Forms.TextBox Flight2;
+        private System.Windows.Forms.Label label2;
     }
 }

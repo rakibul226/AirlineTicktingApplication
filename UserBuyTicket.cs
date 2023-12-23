@@ -24,6 +24,7 @@ namespace TicktingApplication
             
         }
 
+        string TDate = DateTime.Today.ToString("dd-MM-yyyy");
 
         SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
         public string Customer = GlobalVariablesClass.VariableOne;
@@ -43,7 +44,7 @@ namespace TicktingApplication
         {
              
             populate();
-            TDate.Text = DateTime.Today.ToString("dd-MM-yyyy");
+            
 
            
 
@@ -96,7 +97,7 @@ namespace TicktingApplication
                 try
                 {
                     Con.Open();
-                    string query = "insert into BookedTicket values('" + Flight.Text + "','" + From.Text + "','" + To.Text + "','" + Date.Text + "','" + Seat.Text + "','"+ Customer + "','"+ TDate.Text + "')";
+                    string query = "insert into BookedTicket values('" + Flight.Text + "','" + From.Text + "','" + To.Text + "','" + Date.Text + "','" + Seat.Text + "','"+ Customer + "','"+ TDate + "')";
 
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();

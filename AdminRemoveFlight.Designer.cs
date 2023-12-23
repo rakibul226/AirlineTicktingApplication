@@ -123,7 +123,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(370, 88);
+            this.label1.Location = new System.Drawing.Point(361, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 23);
             this.label1.TabIndex = 40;
@@ -147,7 +147,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(538, 88);
+            this.label4.Location = new System.Drawing.Point(527, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 23);
             this.label4.TabIndex = 43;
@@ -199,7 +199,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(318, 42);
+            this.label2.Location = new System.Drawing.Point(339, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 27);
             this.label2.TabIndex = 46;
@@ -221,17 +221,18 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(677, 88);
+            this.label6.Location = new System.Drawing.Point(675, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 48;
             this.label6.Text = "Seat :";
             // 
-            // RemoveTicket
+            // AdminRemoveFlight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Seat);
@@ -249,7 +250,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Flight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RemoveTicket";
+            this.Name = "AdminRemoveFlight";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RemoveTicket";
             this.Load += new System.EventHandler(this.RemoveTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).EndInit();

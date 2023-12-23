@@ -42,7 +42,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.Seat = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TDate = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,23 +214,13 @@
             this.label2.TabIndex = 56;
             this.label2.Text = "Seat :";
             // 
-            // TDate
-            // 
-            this.TDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TDate.Location = new System.Drawing.Point(358, 15);
-            this.TDate.Name = "TDate";
-            this.TDate.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.TDate.Size = new System.Drawing.Size(106, 30);
-            this.TDate.TabIndex = 57;
-            this.TDate.Text = " ";
-            // 
             // UserBuyTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.TDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Seat);
             this.Controls.Add(this.label8);
@@ -249,6 +238,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserBuyTicket";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuyTicket";
             this.Load += new System.EventHandler(this.BuyTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).EndInit();
@@ -273,6 +263,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Seat;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TDate;
     }
 }

@@ -39,6 +39,7 @@ namespace TicktingApplication
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("New flight added");
+                    resetField();
                     Con.Close();
                 }
                 catch (Exception Ex)
@@ -54,10 +55,24 @@ namespace TicktingApplication
 
         }
 
+        private void resetField()
+        {
+            Flight.Text = "";
+            From.Text = "";
+            To.Text = "";
+            Date.Text = "";
+            Seat.Text = "";
+        }
+
         private void label8_Click(object sender, EventArgs e)
         {
             new AdminViewAllTicket().Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            resetField();
         }
     }
 }
