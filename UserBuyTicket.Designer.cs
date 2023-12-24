@@ -42,6 +42,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.Seat = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.SFrom = new System.Windows.Forms.ComboBox();
+            this.STo = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SearchBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AvaibleTicketShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +57,7 @@
             this.AvaibleTicketShow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.AvaibleTicketShow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AvaibleTicketShow.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AvaibleTicketShow.Location = new System.Drawing.Point(23, 61);
+            this.AvaibleTicketShow.Location = new System.Drawing.Point(25, 110);
             this.AvaibleTicketShow.Name = "AvaibleTicketShow";
             this.AvaibleTicketShow.ReadOnly = true;
             this.AvaibleTicketShow.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -87,7 +92,7 @@
             // From
             // 
             this.From.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.From.Location = new System.Drawing.Point(177, 322);
+            this.From.Location = new System.Drawing.Point(187, 322);
             this.From.Name = "From";
             this.From.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.From.Size = new System.Drawing.Size(106, 30);
@@ -214,13 +219,93 @@
             this.label2.TabIndex = 56;
             this.label2.Text = "Seat :";
             // 
+            // SFrom
+            // 
+            this.SFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SFrom.FormattingEnabled = true;
+            this.SFrom.Items.AddRange(new object[] {
+            "Bangladesh",
+            "India",
+            "China",
+            "Spain",
+            "Italy",
+            "Usa",
+            "Uk",
+            "Russis",
+            "Canada"});
+            this.SFrom.Location = new System.Drawing.Point(111, 39);
+            this.SFrom.Name = "SFrom";
+            this.SFrom.Size = new System.Drawing.Size(157, 39);
+            this.SFrom.TabIndex = 57;
+            // 
+            // STo
+            // 
+            this.STo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.STo.FormattingEnabled = true;
+            this.STo.Items.AddRange(new object[] {
+            "Bangladesh",
+            "India",
+            "China",
+            "Spain",
+            "Italy",
+            "Usa",
+            "Uk",
+            "Russis",
+            "Canada"});
+            this.STo.Location = new System.Drawing.Point(345, 39);
+            this.STo.Name = "STo";
+            this.STo.Size = new System.Drawing.Size(157, 39);
+            this.STo.TabIndex = 58;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(35, 49);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 23);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "From :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(296, 49);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 23);
+            this.label7.TabIndex = 60;
+            this.label7.Text = "To :";
+            // 
+            // SearchBtn
+            // 
+            this.SearchBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.SearchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SearchBtn.Location = new System.Drawing.Point(542, 39);
+            this.SearchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SearchBtn.Name = "SearchBtn";
+            this.SearchBtn.Size = new System.Drawing.Size(107, 38);
+            this.SearchBtn.TabIndex = 61;
+            this.SearchBtn.Text = "Search";
+            this.SearchBtn.UseVisualStyleBackColor = false;
+            this.SearchBtn.Click += new System.EventHandler(this.button3_Click);
+            // 
             // UserBuyTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::TicktingApplication.Properties.Resources.airplane_flying_cloudy_sky;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SearchBtn);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.STo);
+            this.Controls.Add(this.SFrom);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Seat);
             this.Controls.Add(this.label8);
@@ -263,5 +348,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Seat;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox SFrom;
+        private System.Windows.Forms.ComboBox STo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button SearchBtn;
     }
 }

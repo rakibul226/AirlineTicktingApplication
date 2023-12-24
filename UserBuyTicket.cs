@@ -46,10 +46,39 @@ namespace TicktingApplication
             populate();
             
 
-           
-
-
         }
+
+        public void searchData()
+        {
+            string fromLocation = SFrom.Text.Trim();
+            string toLocation = STo.Text.Trim();
+
+            Con.Open();
+            string query = "SELECT * FROM FlightTbl WHERE [From] LIKE '%" + fromLocation + "%' AND [To] LIKE '%" + toLocation + "%'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            AvaibleTicketShow.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            searchData();
+        }
+
+
+        // private void BTN_SEARCH_Click(object sender, EventArgs e)
+        //{
+        //     
+        //   
+        //  searchData(fromLocation, toLocation);
+        //   }
+
+
+
+
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -111,5 +140,7 @@ namespace TicktingApplication
 
             }
         }
+
+       
     }
 }

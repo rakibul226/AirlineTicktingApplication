@@ -47,7 +47,7 @@ namespace TicktingApplication
             Seat2.Text = AvaibleTicketShow2.SelectedRows[0].Cells[4].Value.ToString();
         }
 
-        public void ResetText()
+        public void ResetText2()
         {
             Flight2.Text = "";
             From2.Text = "";
@@ -80,7 +80,7 @@ namespace TicktingApplication
                     MessageBox.Show("Flight Update Successfully");
                     Con.Close();
                     populate();
-                    ResetText();
+                    ResetText2();
                 }
                 catch (Exception Ex)
                 {
