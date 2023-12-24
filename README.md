@@ -1,4 +1,6 @@
 # AirlineTicktingApplication
+#checkout source code on github
+https://github.com/rakibul226/AirlineTicktingApplication
 
 
 1.BookedTicket-----------------------------------------------------------------
@@ -46,5 +48,3 @@ CREATE TABLE [dbo].[PassengerTbl] (
     [PassGend]  VARCHAR (10) NOT NULL,
     [PassPhone] VARCHAR (20) NOT NULL
 );
-
-
