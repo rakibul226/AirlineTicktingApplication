@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Xml.Linq;
+using static System.Windows.Forms.AxHost;
 
 namespace TicktingApplication
 {
     public partial class AdminAddNewTicket : Form
     {
-        public AdminAddNewTicket() 
+        public AdminAddNewTicket()
         {
 
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace TicktingApplication
         {
             //if(   Flight.Text == "" || From.Text =="" || To.Text == "" || Date.Text == "" || Seat.Text == "")
 
-             if (string.IsNullOrEmpty(Flight.Text) || string.IsNullOrEmpty(From.Text) || string.IsNullOrEmpty(To.Text)|| string.IsNullOrEmpty(Date.Text) || !int.TryParse(Seat.Text, out int seatValue))
+            if (string.IsNullOrEmpty(Flight.Text) || string.IsNullOrEmpty(From.Text) || string.IsNullOrEmpty(To.Text) || string.IsNullOrEmpty(Date.Text) || !int.TryParse(Seat.Text, out int seatValue))
             {
                 MessageBox.Show("Missing Information");
             }
@@ -39,7 +40,7 @@ namespace TicktingApplication
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("New flight added");
-                    resetField();
+                    ResetText();
                     Con.Close();
                 }
                 catch (Exception Ex)
@@ -50,18 +51,14 @@ namespace TicktingApplication
             }
         }
 
+        public void reset()
+        {
+            
+        }
+
         private void AddNewTicket_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void resetField()
-        {
-            Flight.Text = "";
-            From.Text = "";
-            To.Text = "";
-            Date.Text = "";
-            Seat.Text = "";
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -70,9 +67,17 @@ namespace TicktingApplication
             this.Hide();
         }
 
+        public void ResetText()
+        {
+            Flight.Text = "";
+            From.Text = "";
+            To.Text = "";
+            Date.Text = "";
+            Seat.Text = "";
+        }
         private void button3_Click(object sender, EventArgs e)
         {
-            resetField();
+            ResetText();
         }
     }
 }

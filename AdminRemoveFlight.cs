@@ -103,7 +103,6 @@ namespace TicktingApplication
 
             SqlCommand cmd = new SqlCommand(query, Con);
             cmd.ExecuteNonQuery();
-           // MessageBox.Show("New flight added");
             Con.Close();
         }
 

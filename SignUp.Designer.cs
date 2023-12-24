@@ -258,7 +258,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(464, 371);
+            this.button1.Location = new System.Drawing.Point(482, 362);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 42);
             this.button1.TabIndex = 25;

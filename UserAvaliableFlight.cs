@@ -43,7 +43,7 @@ namespace TicktingApplication
 
         private void label8_Click(object sender, EventArgs e)
         {
-            new UserHome().Show();
+            new UserAllTicket().Show();
             this.Hide();
         }
     }
