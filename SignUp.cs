@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-
+using System.Linq;
+using System.Windows.Forms;
 
 namespace TicktingApplication
 {
     public partial class SignUp : Form
     {
+        SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
+
         public SignUp()
         {
             InitializeComponent();
@@ -50,11 +44,6 @@ namespace TicktingApplication
 
         }
 
-        SqlConnection Con = new SqlConnection(@"Data Source=ROG-531GT\SQLEXPRESS;Initial Catalog=AirTickting;Integrated Security=True");
-
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             string passName = PassName.Text.Trim();
@@ -69,6 +58,12 @@ namespace TicktingApplication
             }
             else
             {
+                if (!IsValidPassword(password))
+                {
+                    MessageBox.Show("Password must be at least 8 characters long and contain a special character and a number");
+                    return;
+                }
+
                 try
                 {
                     Con.Open();
@@ -78,7 +73,7 @@ namespace TicktingApplication
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Passenger Recorded Successfully");
-                    reset();
+                    Reset();
                     Con.Close();
                 }
                 catch (Exception Ex)
@@ -87,7 +82,6 @@ namespace TicktingApplication
                 }
             }
         }
-
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -107,7 +101,7 @@ namespace TicktingApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            reset();
+            Reset();
         }
 
         private void label8_Click_1(object sender, EventArgs e)
@@ -115,15 +109,30 @@ namespace TicktingApplication
             new Login().Show();
             this.Hide();
         }
-        public void reset()
+
+        public void Reset()
         {
             Password.Text = "";
             PassAd.Text = "";
             PassName.Text = "";
-            PassNat.Text = "";
-            PassGend.Text = "";
+            PassNat.SelectedItem = null;
+            PassGend.SelectedItem = null;
             PassportTb.Text = "";
             PhoneTb.Text = "";
+        }
+
+        private bool IsValidPassword(string password)
+        {
+            if (password.Length < 8)
+                return false;
+
+            if (!password.Contains('@'))
+                return false;
+
+            if (!password.Any(char.IsDigit))
+                return false;
+
+            return true;
         }
     }
 }

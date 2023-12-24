@@ -17,13 +17,22 @@ namespace TicktingApplication
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-          //  Application.Run(new LandingPage());
+            Application.Run(new LandingPage());
+
+
+
+
+
+
+
+
+
             //Application.Run(new RemoveTicket());
             // Application.Run(new UpdateFlight2());
 
             //Application.Run(new ViewTicket());
             // Application.Run(new AddNewTicket());
-            Application.Run(new UserBuyTicket());
+           // Application.Run(new UserBuyTicket());
             //Application.Run(new AdminHome();
             //Application.Run(new UserHome());
 

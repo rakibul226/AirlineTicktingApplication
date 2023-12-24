@@ -69,16 +69,6 @@ namespace TicktingApplication
         }
 
 
-        // private void BTN_SEARCH_Click(object sender, EventArgs e)
-        //{
-        //     
-        //   
-        //  searchData(fromLocation, toLocation);
-        //   }
-
-
-
-
 
         private void label8_Click(object sender, EventArgs e)
         {

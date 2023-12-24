@@ -289,7 +289,7 @@
             this.SearchBtn.Location = new System.Drawing.Point(542, 39);
             this.SearchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(107, 38);
+            this.SearchBtn.Size = new System.Drawing.Size(142, 38);
             this.SearchBtn.TabIndex = 61;
             this.SearchBtn.Text = "Search";
             this.SearchBtn.UseVisualStyleBackColor = false;
